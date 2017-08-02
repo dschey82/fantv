@@ -6,4 +6,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return HttpResponse("<H3>Hello, world. You're at the Leagues Index!</H3>")
+    return render(request, "leagues/index.html")
+
+def league_detail(request, id):
+
+    return render(request, "leagues/detail.html")
