@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^$', views.index, name='site_index'),
     url(r'^admin/', admin.site.urls),
     url(r'^leagues/', include('leagues.urls')),
+    url(r'^show/', include('show.urls')),
 ]

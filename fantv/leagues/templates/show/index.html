@@ -1,0 +1,14 @@
+{% extends "show/base.html" %}
+
+{% block title %}
+All Shows
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    {% for show in shows %}
+    <p>{{ show }}</p>
+    {% endfor %}
+</div>
+{% endblock %}
+
