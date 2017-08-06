@@ -1,0 +1,32 @@
+{% extends "leagues/base.html" %}
+
+{% block title %}
+Test Title
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+        <h1>THIS IS MY {{ league.0.show }} LEAGUE:</h1>
+        <h2>{{ league.0.name }}</h2>
+    </div>
+    <div class="col-xs-2"></div>
+</div>
+<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+        <table>
+            <tr>
+                <th>Team Name</th>
+                <th>Owner</th>
+            </tr>
+            {% for team in teams %}
+            <tr><td>{{ team.name }}</td><td>{{ team.owner.username }}</td></tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="col-xs-2"></div>
+</div>
+{% endblock %}
+

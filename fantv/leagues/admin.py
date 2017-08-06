@@ -8,3 +8,5 @@ from .models import *
 admin.site.register(League)
 admin.site.register(Scorecard)
 admin.site.register(Statistic)
+admin.site.register(Team)
+admin.site.register(Player)
